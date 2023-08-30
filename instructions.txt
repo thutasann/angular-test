@@ -1,0 +1,6 @@
+####### INSTRUCTIONS ######
+
+1. You will have to create a fully functional UI based on mockup-up.png
+2. The UI needs to be responsive
+3. Must use Angular 1.x, Semantic UI, jQuery, JavaScript, CSS3, HTML5 to create this UI
+4. All icons are provided in the `icons` folder
