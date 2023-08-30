@@ -12,6 +12,17 @@
   justify-content: flex-start;
   gap: 16px;
   color: white;
+  position: relative;
+}
+
+.message-header > .user > .active-status {
+  position: absolute;
+  left: 30%;
+  bottom: 10%;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #6ecd95;
 }
 
 .message-header > .user > p {

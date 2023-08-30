@@ -7,12 +7,12 @@ import { NavbarComponent } from './navbar/navbar.component'
 import { SidebarComponent } from './sidebar/sidebar.component'
 import { SidebarItemComponent } from './sidebar/sidebar-item/sidebar-item.component'
 import { MessagesComponent } from './messages/messages.component'
-import { NgOptimizedImage } from '@angular/common';
-import { MessageHeaderComponent } from './messages/message-header/message-header.component';
-import { RightBarComponent } from './right-bar/right-bar.component';
-import { ProfileSectionComponent } from './right-bar/profile-section/profile-section.component';
+import { NgOptimizedImage } from '@angular/common'
+import { MessageHeaderComponent } from './messages/message-header/message-header.component'
+import { RightBarComponent } from './right-bar/right-bar.component'
+import { ProfileSectionComponent } from './right-bar/profile-section/profile-section.component'
 import { MessageInputComponent } from './messages/message-input/message-input.component';
-import { LoremComponent } from './messages/lorem/lorem.component'
+import { MessagesListComponent } from './messages/messages-list/messages-list.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { LoremComponent } from './messages/lorem/lorem.component'
     RightBarComponent,
     ProfileSectionComponent,
     MessageInputComponent,
-    LoremComponent,
+    MessagesListComponent,
   ],
   imports: [
     BrowserModule,
