@@ -1,0 +1,38 @@
+.conversations {
+  background-color: var(--grey);
+  max-width: 300px;
+  height: 100vh;
+  overflow-y: auto;
+  padding-bottom: 100px;
+}
+
+.conversations > .search-bar {
+  padding: 12px;
+  background-color: var(--grey-light);
+}
+
+.conversations > .list {
+  margin-top: 16px;
+}
+
+.conversations > .list > .more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 19px;
+}
+
+.conversations > .list > .more > button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--typo-grey);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.conversations > .list > .more > button:hover {
+  color: white;
+}

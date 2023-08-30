@@ -1,0 +1,51 @@
+<div class="item">
+  <!-- point -->
+  <div class="point">
+    <img
+      src="../../../assets/icons/arrow-up-green.png"
+      width="12px"
+      height="12px"
+    />
+    <span>+{{ conversation.point }}</span>
+  </div>
+
+  <!-- image -->
+  <div class="user-image">
+    <img [src]="conversation.image" width="50px" height="50px" />
+    <div class="active-status"></div>
+  </div>
+
+  <!-- info -->
+  <div class="detail">
+    <div class="user">
+      <h3>{{ conversation.name }}.</h3>
+      <span> Today at {{ conversation.date }}</span>
+    </div>
+
+    <div class="badges">
+      <div class="count">
+        <img
+          src="../../../assets/icons/arrow-up-green.png"
+          width="12px"
+          height="12px"
+        />
+        <span>+{{ conversation.awardPoint }}</span>
+      </div>
+
+      <div class="awards">
+        <img src="../../../assets/icons/award.png" width="12px" height="12px" />
+        <img src="../../../assets/icons/star.png" width="12px" height="12px" />
+        <img src="../../../assets/icons/check.png" width="12px" height="12px" />
+        <img
+          src="../../../assets/icons/lightening.png"
+          width="18px"
+          height="18px"
+        />
+      </div>
+    </div>
+
+    <div class="text">
+      <p>{{ conversation.message }}...</p>
+    </div>
+  </div>
+</div>

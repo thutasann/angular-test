@@ -1,0 +1,23 @@
+<div class="conversations">
+  <section class="search-bar">
+    <div class="ui inverted transparent input">
+      <i class="search icon" style="margin-right: 12px"></i>
+      <input type="text" placeholder="Search..." />
+    </div>
+  </section>
+
+  <section class="list">
+    <ng-container *ngFor="let item of converstaions">
+      <div class="ui relaxed divided list">
+        <app-sidebar-item [conversation]="item"></app-sidebar-item>
+      </div>
+    </ng-container>
+
+    <div class="more">
+      <button class="more" aria-label="view more" role="button">
+        <span>View More</span>
+        <i class="chevron down icon"></i>
+      </button>
+    </div>
+  </section>
+</div>

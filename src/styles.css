@@ -6,7 +6,15 @@
 
 :root {
   --yellow: #e59f33;
+  --green: #6ECD95,
+  --primary-black: #1B1C1D;
   --grey: #2e2d2c;
-  --grey-light: #575554;
+  --grey-light: #3c3f41;
   --typo-grey: #9b9991;
+}
+
+
+body{
+  background-color: #1B1C1D;
+  overflow-y: hidden;
 }
