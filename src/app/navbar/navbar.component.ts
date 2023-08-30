@@ -1,5 +1,4 @@
-import { AfterViewInit, ChangeDetectorRef, Component } from '@angular/core'
-import { BreakpointObserver } from '@angular/cdk/layout'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-navbar',
@@ -9,24 +8,9 @@ import { BreakpointObserver } from '@angular/cdk/layout'
 export class NavbarComponent {
   isSidebarOpen = false
 
-  constructor(
-    private observer: BreakpointObserver,
-    private dir: ChangeDetectorRef
-  ) {}
+  constructor() {}
 
   toggleSidebar() {
     this.isSidebarOpen = !this.isSidebarOpen
-  }
-
-  ngAfterViewInit(): void {
-    this.isSidebarOpen = true
-    this.observer.observe(['(max-width:800px)']).subscribe(res => {
-      if (res?.matches) {
-        this.isSidebarOpen = true
-      } else {
-        this.isSidebarOpen = false
-      }
-    })
-    this.dir.detectChanges()
   }
 }
