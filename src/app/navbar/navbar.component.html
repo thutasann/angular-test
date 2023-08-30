@@ -1,7 +1,8 @@
 <div class="ui grid">
+  <!-- Desktop -->
   <div class="computer only row">
     <div class="column">
-      <div class="ui menu">
+      <div class="ui menu" style="display: flex; align-items: center">
         <a class="item" style="margin-right: 30px">
           <div class="logo">
             <img src="../../assets/icons/logo.png" alt="" srcset="" />
@@ -25,33 +26,64 @@
         <a class="item">
           <img src="../../assets/icons/mail.png" />
         </a>
+        <a class="item">
+          <img src="../../assets/icons/point.png" />
+        </a>
+        <a class="item">
+          <img src="../../assets/icons/pie-chart.png" />
+        </a>
+        <a class="item">
+          <img
+            class="crown"
+            src="../../assets/icons/person-with-crown/crown.png"
+          />
+          <img src="../../assets/icons/person-with-crown/person.png" />
+        </a>
+        <a class="item">
+          <img src="../../assets/icons/news-q.png" />
+        </a>
+        <div style="margin-left: auto; display: flex">
+          <a class="item">
+            <img src="../../assets/icons/noti.png" />
+          </a>
+          <a class="item">
+            <img src="../../assets/icons/arrow-up.png" />
+            <span class="up-count">+50</span>
+          </a>
+          <a class="item">
+            <img src="../../assets/icons/person.png" class="person" />
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- Table mobile icon -->
   <div class="tablet mobile only row">
     <div class="column">
       <div class="ui menu">
-        <a id="mobile_item" class="item"><i class="bars icon"></i></a>
+        <a id="mobile_item" class="item"
+          ><i class="bars icon" style="color: white"></i
+        ></a>
       </div>
     </div>
   </div>
 </div>
 
-<div class="ui pushable segment">
-  <div class="ui sidebar vertical menu">
-    <a class="item">Menu Item A</a>
-    <a class="item">Menu Item B</a>
-    <a class="item">Menu Item C</a>
-    <a class="item">Menu Item D</a>
-  </div>
+<!-- mobile sidebar -->
+<div class="ui visible sidebar inverted vertical menu">
+  <a class="item"> 1 </a>
+  <a class="item"> 2 </a>
+  <a class="item"> 3 </a>
 </div>
+<div class="dimmed pusher">content</div>
 
-<script>
-  $('.ui.sidebar')
-    .sidebar({
-      context: $('.ui.pushable.segment'),
-      transition: 'overlay',
-    })
-    .sidebar('attach events', '#mobile_item')
+<script type="application/javascript">
+  $('.ui.sidebar').sidebar('toggle').sidebar('attach events', '#mobile_item')
+  // $('.ui.sidebar')
+  //   .sidebar({
+  //     context: $('.ui.pushable.segment'),
+  //     transition: 'overlay',
+  //   })
+  //   .sidebar('attach events', '#mobile_item')
 </script>
