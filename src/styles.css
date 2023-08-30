@@ -3,3 +3,9 @@
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+
+:root {
+  --yellow: #e59f33;
+  --grey: #2e2d2c;
+  --grey-light: #575554;
+}

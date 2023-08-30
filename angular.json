@@ -21,12 +21,9 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "src/styles.css",
-              "node_modules/semantic-ui-css/components/button.min.css"
+              "node_modules/semantic-ui-css/semantic.min.css"
             ],
-            "scripts": [
-              "node_modules/semantic-ui-css/semantic.min.js",
-              "node_modules/jquery/dist/jquery.min.js"
-            ]
+            "scripts": ["node_modules/jquery/dist/jquery.min.js"]
           },
           "configurations": {
             "production": {
