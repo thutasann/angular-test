@@ -11,9 +11,14 @@
   --grey: #2e2d2c;
   --grey-light: #3c3f41;
   --grey-ligher: #2e2f31;
+  --grey-rightbar: #2b2c2d;
   --typo-grey: #9b9991;
 }
 
+html{
+  overflow-x: hidden;
+  
+}
 
 body{
   background-color: #1B1C1D;

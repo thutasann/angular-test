@@ -3,6 +3,6 @@
 }
 
 .right-bar {
-  background-color: var(--grey);
+  background-color: var(--grey-rightbar);
   height: 100vh;
 }
