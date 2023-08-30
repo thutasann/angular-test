@@ -25,8 +25,6 @@ export class SidebarComponent implements AfterViewInit {
   ) {}
 
   ngAfterViewInit(): void {
-    console.log('this.viewMore', this.viewMore)
-
     this.hide = true
     this.observer.observe(['(max-width:800px)']).subscribe(res => {
       if (res?.matches) {
