@@ -129,7 +129,6 @@ export class MessagesListComponent implements OnInit {
   filteredMessages: IMessage[] = []
 
   ngOnInit(): void {
-    console.log(this.isOld)
     this.filteredMessages = this.isOld
       ? this.messages.slice(0, 1)
       : this.messages

@@ -1,4 +1,4 @@
-<div class="item">
+<div class="item" (mouseenter)="show()" (mouseleave)="hide()">
   <!-- point -->
   <div class="point">
     <img
@@ -48,7 +48,10 @@
       <p>{{ conversation.message }}...</p>
     </div>
 
-    <div class="options">
+    <div
+      class="options"
+      [style]="showOptions ? 'display: block;' : 'display: none;'"
+    >
       <i class="ellipsis vertical icon" style="color: #9b9991"></i>
     </div>
   </div>
