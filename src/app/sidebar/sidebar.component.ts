@@ -1,4 +1,5 @@
-import { Component } from '@angular/core'
+import { AfterViewInit, ChangeDetectorRef, Component } from '@angular/core'
+import { BreakpointObserver } from '@angular/cdk/layout'
 
 export interface IConversation {
   point: number
@@ -14,8 +15,25 @@ export interface IConversation {
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css'],
 })
-export class SidebarComponent {
-  sidenav: boolean = true
+export class SidebarComponent implements AfterViewInit {
+  hide: boolean = true
+
+  constructor(
+    private observer: BreakpointObserver,
+    private dir: ChangeDetectorRef
+  ) {}
+
+  ngAfterViewInit(): void {
+    this.hide = true
+    this.observer.observe(['(max-width:800px)']).subscribe(res => {
+      if (res?.matches) {
+        this.hide = true
+      } else {
+        this.hide = false
+      }
+    })
+    this.dir.detectChanges()
+  }
 
   converstaions: IConversation[] = [
     {

@@ -1,3 +1,7 @@
+.hide {
+  display: none;
+}
+
 .conversations {
   background-color: var(--grey);
   max-width: 300px;
