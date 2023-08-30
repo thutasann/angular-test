@@ -1,1 +1,64 @@
-<div class="right-bar"></div>
+<div [class]="hide ? 'hide' : 'right-bar'">
+  <section class="user-info">
+    <img src="../../assets/icons/person.png" />
+    <h3>John S.</h3>
+    <button class="ui button">
+      <i class="plus icon"></i>
+      FOLLOW
+    </button>
+  </section>
+
+  <section class="social-section">
+    <div class="social">
+      <img src="../../assets/icons/avatar.png" />
+      <span>10,000</span>
+    </div>
+    <div class="social">
+      <img src="../../assets/icons/Instagram.png" />
+      <span>Instagram</span>
+    </div>
+    <div class="social">
+      <img src="../../assets/icons/Twitter.png" />
+      <span>Twitter</span>
+    </div>
+    <div class="social">
+      <img src="../../assets/icons/globe.png" />
+      <span>loman.com</span>
+    </div>
+  </section>
+
+  <section class="quote-container">
+    <i class="icon quote left"></i>
+    <div class="divider"></div>
+    <p>
+      Lorem ipsum is simply dummy text of the <br />
+      printing and typesetting industry.
+    </p>
+  </section>
+
+  <section class="profile-container">
+    <app-profile-section></app-profile-section>
+  </section>
+
+  <section class="badge-container">
+    <h4>Badges</h4>
+    <div class="badges">
+      <div class="badge">
+        <div class="divider"></div>
+        <img src="../../assets/icons/award.png" />
+      </div>
+      <div class="badge">
+        <div class="divider"></div>
+        <img src="../../assets/icons/star.png" />
+      </div>
+      <div class="badge">
+        <div class="divider"></div>
+        <img src="../../assets/icons/check.png" />
+      </div>
+      <div class="badge">
+        <div class="divider"></div>
+        <img src="../../assets/icons/lightening.png" />
+      </div>
+    </div>
+  </section>
+</div>

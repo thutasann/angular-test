@@ -1,0 +1,20 @@
+<div class="tabs">
+  <div class="tab" (click)="handleChange('profile')">
+    Profile
+    <span *ngIf="activeState === 'profile'" class="active"></span>
+  </div>
+  <div class="tab" (click)="handleChange('about-me')">
+    About me
+    <span *ngIf="activeState === 'about-me'" class="active"></span>
+  </div>
+</div>
+
+<div class="points">
+  <div *ngFor="let point of points" class="wrapper">
+    <div class="point">
+      <img src="../../../assets/icons/arrow-up-green.png" />
+      <span> +{{ point }}</span>
+      <span> Total </span>
+    </div>
+  </div>
+</div>

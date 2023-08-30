@@ -18,7 +18,7 @@ export class AppComponent {
 
   ngAfterViewInit(): void {
     this.hide = true
-    this.observer.observe(['(max-width:800px)']).subscribe(res => {
+    this.observer.observe(['(max-width:1000px)']).subscribe(res => {
       if (res?.matches) {
         this.hide = true
       } else {

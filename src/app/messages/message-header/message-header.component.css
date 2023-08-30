@@ -1,6 +1,9 @@
 .message-header {
   padding: 12px 20px;
   background-color: var(--grey-ligher);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .message-header > .user {
@@ -13,4 +16,13 @@
 
 .message-header > .user > p {
   font-size: 16px;
+}
+
+.message-header > .options > .icon {
+  color: #9b9991;
+  cursor: pointer;
+}
+
+.message-header > .options > .icon:hover {
+  color: wheat;
 }

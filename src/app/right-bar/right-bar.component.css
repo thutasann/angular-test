@@ -3,6 +3,126 @@
 }
 
 .right-bar {
+  padding: 28px 24px;
   background-color: var(--grey-rightbar);
   height: 100vh;
+  overflow-y: auto;
+}
+
+/* ------ User info */
+
+.right-bar > .user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-bar > .user-info > img {
+  object-fit: contain;
+  object-position: center;
+  width: 140px;
+  height: 140px;
+}
+
+.right-bar > .user-info > h3 {
+  font-size: 21px;
+  color: white;
+}
+
+.right-bar > .user-info > button {
+  font-size: 12px;
+  background-color: #f4a933;
+  color: white;
+}
+
+.right-bar > .user-info > button:hover {
+  background-color: #e59f33;
+}
+
+/* ------ Social section */
+.social-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 26px;
+  gap: 20px;
+}
+
+.social-section > .social {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  gap: 12px;
+}
+
+/* ------ Quote container */
+.quote-container {
+  margin-top: 26px;
+  color: var(--typo-grey);
+  font-size: 12px;
+  background-color: #1b1c1d;
+  padding: 15px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.quote-container > .divider {
+  height: 35px;
+  width: 1px;
+  margin-top: -12px;
+  background-color: #e59f33;
+  margin-right: 12px;
+}
+
+.quote-container > .icon {
+  margin-bottom: auto;
+  margin-top: -12px;
+  color: #e59f33;
+  margin-right: 4px;
+}
+
+/* ------ Quote container */
+.profile-container {
+  margin-top: 24px;
+}
+
+/* ------ Badge container */
+
+.badge-container {
+  margin-top: 26px;
+}
+
+.badge-container > h4 {
+  font-size: 14px;
+  color: white;
+}
+
+.badge-container > .badges {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.badge-container > .badges > .badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.badge-container > .badges > .badge > .divider {
+  width: 1px;
+  height: 8px;
+  background-color: #4f5051;
+}
+
+/* ------ Media query */
+@media only screen and (max-width: 1100px) {
+  .right-bar > .user-info > img {
+    width: 80px;
+    height: 80px;
+  }
 }
