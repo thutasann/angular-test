@@ -7,16 +7,21 @@
   </section>
 
   <section class="list">
-    <ng-container *ngFor="let item of converstaions">
+    <ng-container *ngFor="let item of filteredConversations">
       <div class="ui relaxed divided list">
         <app-sidebar-item [conversation]="item"></app-sidebar-item>
       </div>
     </ng-container>
 
     <div class="more">
-      <button class="more" aria-label="view more" role="button">
-        <span>View More</span>
-        <i class="chevron down icon"></i>
+      <button
+        class="more"
+        aria-label="view more"
+        role="button"
+        (click)="!viewMore ? handleViewMore() : handleViewLess()"
+      >
+        <span>View {{ viewMore ? 'Less' : 'More' }}</span>
+        <i [class]="viewMore ? 'chevron up icon' : 'chevron down icon'"></i>
       </button>
     </div>
   </section>
