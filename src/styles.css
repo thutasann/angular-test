@@ -17,9 +17,9 @@
 
 html{
   overflow-x: hidden;
-  
 }
 
 body{
   background-color: #1B1C1D;
+  overflow-y: hidden;
 }
