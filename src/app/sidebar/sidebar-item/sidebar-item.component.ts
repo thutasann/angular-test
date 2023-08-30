@@ -17,7 +17,6 @@ export class SidebarItemComponent implements OnInit {
 
   show(): void {
     this.showOptions = true
-    console.log('this.showOpeionts', this.showOptions)
   }
 
   hide(): void {
