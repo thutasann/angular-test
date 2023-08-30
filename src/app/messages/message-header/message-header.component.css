@@ -1,0 +1,16 @@
+.message-header {
+  padding: 12px 20px;
+  background-color: var(--grey-ligher);
+}
+
+.message-header > .user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  color: white;
+}
+
+.message-header > .user > p {
+  font-size: 16px;
+}

@@ -2,11 +2,11 @@ import { BreakpointObserver } from '@angular/cdk/layout'
 import { ChangeDetectorRef, Component } from '@angular/core'
 
 @Component({
-  selector: 'app-messages',
-  templateUrl: './messages.component.html',
-  styleUrls: ['./messages.component.css'],
+  selector: 'app-right-bar',
+  templateUrl: './right-bar.component.html',
+  styleUrls: ['./right-bar.component.css'],
 })
-export class MessagesComponent {
+export class RightBarComponent {
   hide: boolean = true
 
   constructor(

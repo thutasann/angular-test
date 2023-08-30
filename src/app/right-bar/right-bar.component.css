@@ -1,0 +1,8 @@
+.hide {
+  display: none;
+}
+
+.right-bar {
+  background-color: var(--grey);
+  height: 100vh;
+}
