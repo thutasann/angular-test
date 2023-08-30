@@ -6,7 +6,7 @@ import { BreakpointObserver } from '@angular/cdk/layout'
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent implements AfterViewInit {
+export class NavbarComponent {
   isSidebarOpen = false
 
   constructor(
