@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-lorem',
   templateUrl: './lorem.component.html',
-  styleUrls: ['./lorem.component.css']
+  styleUrls: ['./lorem.component.css'],
 })
-export class LoremComponent {
-
-}
+export class LoremComponent {}

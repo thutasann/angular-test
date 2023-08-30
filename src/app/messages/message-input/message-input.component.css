@@ -2,28 +2,23 @@
   position: fixed;
   bottom: 0%;
   color: white;
-  width: 705px;
+  width: 707px;
   border-top: 1px solid #3c3f41;
 }
 
 /* ------ Media query */
-@media only screen and (min-width: 1400px) {
-  .mesasge-input {
-    width: 1;
-  }
-}
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 1600px) {
   .mesasge-input {
     width: 100%;
   }
 }
 
-/* @media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1200px) {
   .mesasge-input {
     width: 100%;
   }
-} */
+}
 
 .mesasge-input > input {
   width: 100%;
